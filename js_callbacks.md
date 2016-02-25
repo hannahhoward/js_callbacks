@@ -8,9 +8,9 @@
 | Use a Named Function as a Callback |
 | Use an Anonymous Function as a Callback |
 
-**Annotation: based on my experience programming, understanding why one would use a callback is the most important piece here. My desire is to use real world examples to bridge the gap of understanding **
+**Annotation: based on my experience programming, understanding why one would use a callback is the most important piece here. My desire is to use real world examples to bridge the gap of understanding**
 
-**Annotation: Some members of my audience in demo class will have no understanding of functions themselves. So some intoduction is needed **
+**Annotation: Some members of my audience in demo class will have no understanding of functions themselves. So some intoduction is needed**
 
 
 ## Roadmap
@@ -20,45 +20,45 @@
 4. Using Callbacks with Iterating Methods (20 mins)
 5. Using Callbacks with Asynchronous Methods (40 mins)
 
-**Annotation: I would persue a slightly different agenday, emphasizing conceptual understanding first. My updated roadmap looks like: **
+**Annotation: I would persue a slightly different agenday, emphasizing conceptual understanding first. My updated roadmap looks like:**
 
-**1. Opening/hook/review/learning objectives (5 mins) **
+**1. Opening/hook/review/learning objectives (5 mins)**
 
-**2. What is a callback function? (5 mins) **
+**2. What is a callback function? (5 mins)**
 
-**3. Uses of callback functions (30 mins) **
+**3. Uses of callback functions (30 mins)**
 
-**a. In response to events (5 mins) **
+**a. In response to events (5 mins)**
 
-**b. Passed to iterator methods (10 mins) **
+**b. Passed to iterator methods (10 mins)**
 
-**c. Passed to an asynchronous process (15 mins) **
+**c. Passed to an asynchronous process (15 mins)**
 
-**4. Callback syntax: Anonymous function syntax vs named callbackes (10 mins) **
+**4. Callback syntax: Anonymous function syntax vs named callbackes (10 mins)**
 
-**5. Exercises (30 mins) **
+**5. Exercises (30 mins)**
 
-**b. Iterator function exercise (15 mins) **
+**b. Iterator function exercise (15 mins)**
 
-**c. Async function exercise (15 mins) **
+**c. Async function exercise (15 mins)**
 
 ----
 
-**Annotation: Hook exercise -- the rap call and response - "When I say ... you say ..." **
+**Annotation: Hook exercise -- the rap call and response - "When I say ... you say ..."**
 
-**play: https://www.youtube.com/watch?v=hVOm8fkGGro **
+**play: https://www.youtube.com/watch?v=hVOm8fkGGro**
 
-**(this needs some guts to deliver :) **
+**(this needs some guts to deliver :)**
 
-**Lead the class in the following call and responses **
+**Lead the class in the following call and responses**
 
-**1. When I say Javascript you say awesome **
+**1. When I say Javascript you say awesome**
 
-**2. When I say callback you say functions **
+**2. When I say callback you say functions**
 
-**3. When I say DOM Manipulation you say Slow **
+**3. When I say DOM Manipulation you say Slow**
 
-**4. When I saw events, you say asynchronous **
+**4. When I saw events, you say asynchronous**
 
 ### 1. What's a Callback Function?<small>  (5 mins)</small>
 
@@ -68,7 +68,7 @@ In fact, you've already seen callbacks in use in the DOM Manipulation lesson and
 
 When we pass a function to another function as an argument, and execute that function that's being passed in, we often refer to the function being passed in as a **_callback_** function.
 
-**Annotation: I think it's important to break this down into component parts -- what is a function? what is a parameter? then introduce the concept of passing a function as a parameter **
+**Annotation: I think it's important to break this down into component parts -- what is a function? what is a parameter? then introduce the concept of passing a function as a parameter**
 
 Something like this should look familiar:
 
@@ -84,7 +84,7 @@ The function that's the second argument in the `addEventListener` method is a _c
 
 **?: Besides being a _callback function_, what's another distinction of that function?**
 
-**Annotation: I am questionable about the value of this question -- there are several answers here -- I'm not sure what's being looked for. **
+**Annotation: I am questionable about the value of this question -- there are several answers here -- I'm not sure what's being looked for.**
 
 ### 2. When are Callbacks Used?<small>  (5 mins)</small>
 
@@ -92,7 +92,7 @@ Callback functions are functions that get called later by the method/function we
 
 Here are three scenarios where callback functions are used:
 
-**Annotation: I am changing up the order here because I think an iterator is a more complex concept than events **
+**Annotation: I am changing up the order here because I think an iterator is a more complex concept than events**
 
 1. To provide a function to an iterator method, for example, the `forEach` method on arrays.
 
@@ -100,49 +100,49 @@ Here are three scenarios where callback functions are used:
 
 3. To provide a function that should be executed when an _asynchronous_ process has completed.
 
-**Annotation: In my version, I want to first just list these three, but then dive into conceptually what each mean **
+**Annotation: In my version, I want to first just list these three, but then dive into conceptually what each mean**
 
-**3.a. Talk about events. Exercise -- have students come up with a list of events that might trigger callbacks. (5 mins) **
+**3.a. Talk about events. Exercise -- have students come up with a list of events that might trigger callbacks. (5 mins)**
 
-**3.b Talk about iterators.(10 mins) **
+**3.b Talk about iterators.(10 mins)**
 
-**Exercise: Fortune cookie callbacks **
+**Exercise: Fortune cookie callbacks**
 
-**Materials: two post-its, list of fortune cookie fortunes **
+**Materials: two post-its, list of fortune cookie fortunes**
 
-**Write on one post it: "Add the words 'in bed' to the end of the fortune and whisper the result in the 'callback's ear. **
+**Write on one post it: "Add the words 'in bed' to the end of the fortune and whisper the result in the 'callback's ear.**
 
-**Write on the other post it: "Sing (in opera voice) whatever is whispered in your ear" **
+**Write on the other post it: "Sing (in opera voice) whatever is whispered in your ear"**
 
-**Ask for two volunteers -- an "iterator" and a "callback" -- give the first post it to the iterator and then the second to the callback **
+**Ask for two volunteers -- an "iterator" and a "callback" -- give the first post it to the iterator and then the second to the callback**
 
-**Go through the collection, having iterator add "in bed" to the fortune and then having callback sing it. Hilarity Ensues **
+**Go through the collection, having iterator add "in bed" to the fortune and then having callback sing it. Hilarity Ensues**
 
-**Point out each persons role, and how they are similar to a real iterator/callback **
+**Point out each persons role, and how they are similar to a real iterator/callback**
 
-**Exercise: Find iterators **
+**Exercise: Find iterators**
 
-**Almost all iterators operate on arrays. Have each students (on their own) visit the MDN documentation and write down all the iterator functions they can find, then ask each student to name one in a whip-around **
+**Almost all iterators operate on arrays. Have each students (on their own) visit the MDN documentation and write down all the iterator functions they can find, then ask each student to name one in a whip-around**
 
-**3.c Talk about callbacks for asychronous functions (15 min) **
+**3.c Talk about callbacks for asychronous functions (15 min)**
 
-**Analogy: calling a government office -- how it use to work, vs how it works now -- you used to wait on hold, then neccesity (lesser hours) led them to introduce callbacks -- where you give your number and then they call you back **
+**Analogy: calling a government office -- how it use to work, vs how it works now -- you used to wait on hold, then neccesity (lesser hours) led them to introduce callbacks -- where you give your number and then they call you back**
 
-**Point out the difference between the synchronous process of being on hold, and the asynchronous process of going about your day while you wait to be called back **
+**Point out the difference between the synchronous process of being on hold, and the asynchronous process of going about your day while you wait to be called back**
 
-**Exercise: Have students spend time on their own coming up with another real life example of an asynchronous process, then pair share, then quick share outs **
+**Exercise: Have students spend time on their own coming up with another real life example of an asynchronous process, then pair share, then quick share outs**
 
-**Now move to common asynchronous processes in web applications -- timeout, http calls, etc. -- why are these processes asynchronous? **
+**Now move to common asynchronous processes in web applications -- timeout, http calls, etc. -- why are these processes asynchronous?**
 
-**Talk about asynchronous code execution -- see below **
+**Talk about asynchronous code execution -- see below**
 
 In a bit, we're going to take a look at and practice with each of these scenarios...
 
 ### 3. Anonymous vs. Named Functions<small>  (5 mins)</small>
 
-**Annotation: I think the distinction between named and unnamed callbacks is less important than understanding the concept of callbacks. I want to cover it, but I think it's better to do it once conceptual understanding of what callbacks are is introduce **
+**Annotation: I think the distinction between named and unnamed callbacks is less important than understanding the concept of callbacks. I want to cover it, but I think it's better to do it once conceptual understanding of what callbacks are is introduce**
 
-**I would also spend a couple extra minutes here reviewing the syntax in examples of callbacks we've seen so far, and going over overview of specific callback syntax **
+**I would also spend a couple extra minutes here reviewing the syntax in examples of callbacks we've seen so far, and going over overview of specific callback syntax**
 
 #### Anonymous Functions are Convenient
 
@@ -180,15 +180,15 @@ Note that we need to be sure to include any required parameters, like the `event
 
 **?: Discuss with your pair for one minute and see if you can figure out when it would it be advantageous to using a named function vs. an anonymous function?**
 
-**annotation: I like this exercise **
+**annotation: I like this exercise**
 
 **?: Could we have used a function expression to define `myCallback` instead of a function declaration?**
 
-**Annotation: Is this too advanced? Requires synthesizing function hoisting and callbacks. Perhaps call on more advanced students to push them **
+**Annotation: Is this too advanced? Requires synthesizing function hoisting and callbacks. Perhaps call on more advanced students to push them**
 
 ### 4. Using Callbacks with Iterating Methods<small>  (20 mins)</small>
 
-**Because we've already done heavy conceptual setup, I'd skip this and go right to the 'Individual Practice' and shorten this to a 15 minute section **
+**Because we've already done heavy conceptual setup, I'd skip this and go right to the 'Individual Practice' and shorten this to a 15 minute section**
 
 The `forEach` method on arrays is a popular method for iterating over all of the elements in an array. We provide `forEach` a callback function and it will be called once for each element in the array.
 
@@ -242,7 +242,7 @@ We'll review a solution in 15 minutes...
 
 ### 5. Using Callbacks with Asynchronous Methods<small>  (40 mins)</small>
 
-**Because of the conceptual front-loading earlier, this section would focus mainly on the practice exercise, with a quick setup and review **
+**Because of the conceptual front-loading earlier, this section would focus mainly on the practice exercise, with a quick setup and review**
 
 #### Synchronous Code Execution
 
@@ -408,7 +408,7 @@ For reference, here's [a CodePen with a possible solution](http://codepen.io/jim
 
 You'll notice that when invoking multiple async functions with callbacks, the nested code starts to look like something referred to as "The Pyramid of Doom", also known as "Callback Hell".
 
-**Annotation: Mention promises -- not to explain but as a possible extra credit assignment -- research promoises and explain how they solve callback hell **
+**Annotation: Mention promises -- not to explain but as a possible extra credit assignment -- research promoises and explain how they solve callback hell**
 
 ### Essential Question
 
